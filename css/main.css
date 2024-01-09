@@ -19,6 +19,7 @@
 
 .main__blockfirstbuttons {
   padding-right: 1rem;
+  gap: 1rem;
 }
 
 .repair1 {

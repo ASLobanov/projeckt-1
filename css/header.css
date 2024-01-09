@@ -1,0 +1,85 @@
+.header__nav,
+.header__groupfirst,
+.header__groupsecond,
+.header__groupsecondone,
+.header__groupsecondtwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__nav {
+  justify-content: space-between;
+  padding: 1.162rem;
+}
+
+.burger {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/burger.svg);
+  background-color: white;
+}
+
+.call {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/call.svg);
+  background-color: white;
+}
+
+.chat {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/chat.svg);
+  background-color: white;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/profile.svg);
+  background-color: white;
+}
+
+.repair {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/repair.svg);
+  background-color: white;
+}
+
+.checkstatus {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(/img/checkstatus.svg);
+  background-color: white;
+}
+
+@media (max-width: 321px) {
+  .header__groupsecondone {
+    display: none;
+  }
+  .header__groupfirst > svg {
+    display: none;
+  }
+}
+
+.header__groupfirst,
+.header__groupsecond,
+.header__groupsecondone,
+.header__groupsecondtwo {
+  gap: 1rem;
+}
+
+@media (min-width: 1119px) {
+  .header {
+    display: none;
+  }
+}

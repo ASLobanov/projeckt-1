@@ -1,0 +1,228 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+.main__blockfirst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__blockfirsttitle,
+.main__blockfirstbuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main__blockfirstbuttons {
+  padding-right: 1rem;
+}
+
+.repair1 {
+  width: 168px;
+  height: 40px;
+  border: none;
+  text-align: left;
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+.icon-repair1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background: #f8f8f8 url("/icon/repair.svg");
+}
+
+.checkstatus1 {
+  width: 168px;
+  height: 40px;
+  width: 168px;
+  height: 40px;
+  border: none;
+  text-align: left;
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+.icon-checkstatus1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background: #f8f8f8 url("/icon/checkstatus1.svg");
+}
+.main__blockthird {
+  display: flex;
+  flex-direction: row;
+}
+.main__blockthirdreadmore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.5rem;
+  padding-top: 1rem;
+}
+
+.main__blocksecond {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  padding-left: 1rem;
+  row-gap: 0.5rem;
+}
+
+.main__blocksecond::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.main__blocksecond > button {
+  white-space: nowrap;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  color: #7e7e82;
+}
+
+.button__repairbrand {
+  border: #b8ffec;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+}
+.main__blockthird {
+  display: flex;
+}
+.textone,
+.texttwo {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.more {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 320px) {
+  .main__blockfirst {
+    padding-top: 1.5rem;
+  }
+  .main__blockthirdtext {
+    overflow: hidden;
+    max-width: 18rem;
+    height: 5.625rem;
+  }
+  .main__blocksecond {
+    padding-top: 1.5rem;
+  }
+  .parttitle {
+    padding-left: 1rem;
+  }
+  .main__blockthird {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+  }
+  .main__blockthirdtextreadmore {
+    padding-left: 1rem;
+  }
+  .textone,
+  .texttwo {
+    font-size: 0.8rem;
+    line-height: 1.125rem;
+  }
+  .imageCPS {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 1119px) {
+  .main__blockthird {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  .main__blockfirst {
+    padding-top: 1.5rem;
+  }
+  .main__blocksecond {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    overflow: auto;
+  }
+  .parttitle {
+    padding-left: 1.25rem;
+  }
+  .main__blockthirdtext {
+    overflow: hidden;
+    max-width: 19.5rem;
+    height: 10rem;
+  }
+  .textone,
+  .texttwo {
+    font-size: 0.875rem;
+    line-height: 1.32rem;
+  }
+  .main__blockthirdtextreadmore {
+    display: flex;
+    flex-direction: column;
+  }
+  .blockthird__image {
+    padding-left: 3rem;
+    max-width: 47%;
+  }
+  .imageCPS {
+    max-width: 150%;
+    max-height: 70%;
+  }
+}
+@media (max-width: 1119px) {
+  .main__blockfirstbuttons {
+    display: none;
+  }
+}
+
+@media (min-width: 1119px) {
+  .main__blockfirst {
+    padding-top: 2.625rem;
+  }
+  .main__blocksecond {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  .parttitle {
+    padding-left: 1.75rem;
+  }
+  .main__blockthird {
+    padding-top: 1.188rem;
+    padding-left: 2.125rem;
+  }
+
+  .main__blockthirdtext {
+    max-width: 30.625rem;
+    height: 10rem;
+  }
+  .main__blockthirdtextreadmore {
+    display: flex;
+    flex-direction: column;
+  }
+  .blockthird__image {
+    padding-left: 2.3rem;
+  }
+}

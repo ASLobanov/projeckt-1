@@ -51,6 +51,7 @@ button {
   margin: 0; /* Убираем отступы */
   padding: 0;
   display: flex; /* Включаем флексы */
+  max-width: 1200px;
   flex-direction: column;
   font-family: "TT Lakes";
 }
